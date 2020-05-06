@@ -11,8 +11,8 @@ public class MinTime {
     public int minTime(int[] time, int m) {
         int n = time.length;
         if (n <= m) return 0;
-        int sum = 0;
         int left = 0;
+        //二分查找即可
         int right = Integer.MAX_VALUE;
         while (left < right) {
             int mid = (left + right) / 2;
